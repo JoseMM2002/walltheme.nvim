@@ -1,4 +1,5 @@
 return function(colors)
+	vim.notify(vim.inspect(colors))
 	return {
 		Normal = { fg = colors.foreground, bg = colors.background },
 		StatusLineNC = { bg = colors.background, fg = colors.background },

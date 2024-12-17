@@ -19,7 +19,6 @@ end
 
 local function load_theme()
 	local colors = load_colors()
-	vim.notify(vim.inspect(colors))
 
 	vim.opt.termguicolors = true
 	highlight_all(colors)
