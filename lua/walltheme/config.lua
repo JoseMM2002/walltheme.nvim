@@ -1,7 +1,7 @@
 local M = {}
 
 M.set_colors = function(colors)
-	vim.notify(vim.inspect(colors))
+	vim.notify(vim.inspect(colors), "info", { title = "Wall Theme Colors" })
 	return {
 		Normal = { fg = colors.foreground, bg = colors.background },
 		StatusLineNC = { bg = colors.background, fg = colors.background },
