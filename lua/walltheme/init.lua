@@ -11,7 +11,7 @@ local function load_colors()
 end
 
 local function highlight_all(colors)
-	local highlights = require("config")()
+	local highlights = require("walltheme.config")()
 
 	for group, properties in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, properties)
