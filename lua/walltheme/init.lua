@@ -6,7 +6,7 @@ local function load_colors()
 
 	package.path = package.path .. ";" .. walltheme_path -- Cargar el módulo
 
-	return require("colors")
+	M.colors = require("colors")
 end
 
 local function highlight_all(colors)
@@ -18,10 +18,10 @@ local function highlight_all(colors)
 end
 
 local function load_theme()
-	local colors = load_colors()
+	load_colors()
 
 	vim.opt.termguicolors = true
-	highlight_all(colors)
+	highlight_all(M.colors)
 end
 
 -- Función para cargar el archivo de colores
