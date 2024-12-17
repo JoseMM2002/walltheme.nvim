@@ -5,10 +5,8 @@ local function load_colors()
 	local walltheme_path = home .. "/.cache/walltheme/?.lua"
 
 	package.path = package.path .. ";" .. walltheme_path -- Cargar el módulo
-	local colors = require("colors")
 
-	vim.notify(vim.inspect(colors), "info", { title = "Colors" })
-	return colors
+	return require("colors")
 end
 
 local function highlight_all(colors)
@@ -21,6 +19,8 @@ end
 
 local function load_theme()
 	local colors = load_colors()
+	vim.notify(vim.inspect(colors))
+
 	vim.opt.termguicolors = true
 	highlight_all(colors)
 end
