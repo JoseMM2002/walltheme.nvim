@@ -10,7 +10,7 @@ local function load_colors()
 end
 
 local function highlight_all()
-	local config = require("config").set_colors(M.colors)
+	local config = require("walltheme.config").set_colors(M.colors)
 
 	for group, properties in pairs(config) do
 		vim.api.nvim_set_hl(0, group, properties)
