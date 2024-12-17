@@ -27,10 +27,11 @@ end
 -- Función para cargar el archivo de colores
 function M.setup()
 	load_theme()
-
 	vim.api.nvim_create_user_command("LoadWallTheme", function()
 		load_theme()
-	end)
+	end, {
+		nargs = 0,
+	})
 end
 
 return M
