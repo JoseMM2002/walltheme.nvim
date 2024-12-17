@@ -1,17 +1,11 @@
 local M = {}
 
--- Ruta al archivo de colores en .cache
-local colors_path = "~/.cache/walltheme/colors.lua"
-
 local function load_theme()
-	package.path = package.path .. ";~/.cache/wallthemes/?.lua"
+	local colors_path = vim.fn.stdpath("cache") .. "/wallthemes/colors.lua"
+	package.path = package.path .. ";" .. colors_path
 
 	local colors = require("colors")
-
-	vim.notify("Colors: " .. colors.colorscheme, "info", {
-		title = "WallTheme",
-		timeout = 500,
-	})
+	vim.notify(vim.inspect(colors))
 end
 
 -- Función para cargar el archivo de colores
