@@ -1,7 +1,7 @@
 local M = {}
 
 local function load_theme()
-	local colors_path = vim.fn.stdpath("cache") .. "/wallthemes/colors.lua"
+	local colors_path = vim.fn.stdpath("cache") .. "/walltheme/colors.lua"
 	package.path = package.path .. ";" .. colors_path
 
 	local colors = require("colors")
