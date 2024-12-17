@@ -8,7 +8,10 @@ local function load_theme()
 
 	local colors = require("colors")
 
-	print("El color de fondo es: " .. colors.background)
+	vim.notify("Colors: " .. colors.colorscheme, "info", {
+		title = "WallTheme",
+		timeout = 500,
+	})
 end
 
 -- Función para cargar el archivo de colores
