@@ -18,6 +18,7 @@ local function highlight_all()
 end
 
 local function load_theme()
+	package.loaded.colors = nil
 	load_colors()
 
 	vim.opt.termguicolors = true
