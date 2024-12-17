@@ -252,6 +252,7 @@ M.set_colors = function(colors)
 		-- BufferLine
 		BufferLineIndicatorSelected = { fg = colors.color5 },
 		BufferLineFill = { bg = colors.background },
+		NotifyBackground = { bg = colors.background },
 	}
 end
 
