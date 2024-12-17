@@ -7,6 +7,7 @@ local function load_colors()
 	package.path = package.path .. ";" .. walltheme_path -- Cargar el módulo
 	local colors = require("colors")
 
+	vim.notify(vim.inspect(colors), "info", { title = "Colors" })
 	return colors
 end
 
