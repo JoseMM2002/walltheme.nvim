@@ -1,4 +1,6 @@
-return function(colors)
+local M = {}
+
+M.set_colors = function(colors)
 	vim.notify(vim.inspect(colors))
 	return {
 		Normal = { fg = colors.foreground, bg = colors.background },
@@ -252,3 +254,5 @@ return function(colors)
 		BufferLineFill = { bg = colors.background },
 	}
 end
+
+return M

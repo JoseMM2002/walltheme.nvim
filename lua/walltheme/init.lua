@@ -9,10 +9,10 @@ local function load_colors()
 	M.colors = require("colors")
 end
 
-local function highlight_all(colors)
-	local highlights = require("walltheme.config")()
+local function highlight_all()
+	local config = require("config").set_colors(M.colors)
 
-	for group, properties in pairs(highlights) do
+	for group, properties in pairs(config) do
 		vim.api.nvim_set_hl(0, group, properties)
 	end
 end
@@ -21,7 +21,7 @@ local function load_theme()
 	load_colors()
 
 	vim.opt.termguicolors = true
-	highlight_all(M.colors)
+	highlight_all()
 end
 
 -- Función para cargar el archivo de colores
