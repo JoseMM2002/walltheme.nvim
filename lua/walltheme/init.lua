@@ -10,6 +10,7 @@ local function load_theme()
 		return
 	end
 
+	vim.notify(colorscheme, vim.log.levels.INFO)
 	local colors = colorscheme.colors
 
 	-- Aplicar colores
