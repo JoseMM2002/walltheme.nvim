@@ -71,10 +71,10 @@ The `colors.lua` file should export a table of colors. For example:
 return {
   bg = "#1E1E2E",
   fg = "#CDD6F4",
-  red = "#F38BA8",
-  green = "#A6E3A1",
-  blue = "#89B4FA",
-  yellow = "#F9E2AF",
+  color0 = "#F38BA8",
+  color1 = "#A6E3A1",
+  color2 = "#89B4FA",
+  color3 = "#F9E2AF",
   -- more colors...
 }
 ```
@@ -90,3 +90,15 @@ This project is licensed under the [MIT License](./LICENSE).
 ---
 
 Let me know if you need further adjustments or enhancements. 🚀
+
+---
+
+# Screenshots 📸
+
+![Screenshot1](pictures/Screenshot1.jpeg)
+
+![Screenshot2](pictures/Screenshot2.jpeg)
+
+![Screenshot3](pictures/Screenshot3.jpeg)
+
+![Screenshot4](pictures/Screenshot4.jpeg)
