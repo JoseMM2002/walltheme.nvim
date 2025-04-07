@@ -253,7 +253,7 @@ M.set_colors = function(colors)
 		BufferLineFill = { bg = colors.color8 },
 
 		-- Notify
-		NotifyBackground = { bg = colors.background },
+		NotifyBackground = { bg = colors.color8 },
 
 		-- Blink CMP Highlights
 		BlinkCmpKindDefault = { fg = colors.foreground },
@@ -315,8 +315,38 @@ M.set_colors = function(colors)
 		BlinkCmpDocSeparator = { link = "NormalFloat" },
 		BlinkCmpDocCursorLine = { link = "Visual" },
 		BlinkCmpSignatureHelpActiveParameter = { link = "LspSignatureActiveParameter" },
-		BlinkCmpCursorLineMenuHack = { bg = "#1108d2" },
-		BlinkCmpKindAvante = { fg = "#89b4fa" },
+		BlinkCmpCursorLineMenuHack = { bg = colors.color4 },
+		BlinkCmpKindAvante = { fg = colors.color12 },
+
+		-- Avante Highlights
+		AvanteReversedNormal = { fg = colors.background, bg = colors.foreground },
+		AvanteSuggestion = { link = "Comment" },
+		AvanteCommentFg = { fg = colors.color11 },
+		AvanteSidebarWinHorizontalSeparator = { fg = colors.background, bg = colors.color8 },
+		AvanteReversedTitle = { fg = colors.color2 },
+		AvanteButtonDangerHover = { fg = colors.background, bg = colors.color11 },
+		AvanteThirdTitle = { fg = colors.foreground, bg = colors.color1 },
+		AvanteButtonDanger = { fg = colors.background, bg = colors.foreground },
+		AvanteReversedSubtitle = { fg = colors.color6 },
+		AvanteSubtitle = { fg = colors.background, bg = colors.color6 },
+		AvanteButtonPrimary = { fg = colors.background, bg = colors.foreground },
+		AvanteButtonDefaultHover = { fg = colors.background, bg = colors.color2 },
+		AvanteSidebarWinSeparator = { fg = colors.color8, bg = colors.color8 },
+		AvanteToBeDeleted = { fg = colors.foreground, bg = colors.color11, style = "strikethrough" },
+		AvanteButtonDefault = { fg = colors.background, bg = colors.foreground },
+		AvanteConfirmTitle = { fg = colors.background, bg = colors.color11 },
+		AvanteButtonPrimaryHover = { fg = colors.background, bg = colors.color6 },
+		AvanteTitle = { fg = colors.background, bg = colors.color2 },
+		AvanteSidebarNormal = { link = "NormalFloat" },
+		AvanteToBeDeletedWOStrikethrough = { bg = colors.color1 },
+		AvanteReversedThirdTitle = { fg = colors.color1 },
+		AvanteInlineHint = { link = "Keyword" },
+		AvantePopupHint = { link = "NormalFloat" },
+		AvanteAnnotation = { link = "Comment" },
+		AvanteConflictCurrent = { bg = colors.color1, style = "bold" },
+		AvanteConflictIncoming = { bg = colors.color4, style = "bold" },
+		AvanteConflictIncomingLabel = { bg = colors.color4 },
+		AvanteConflictCurrentLabel = { bg = colors.color11 },
 	}
 end
 
